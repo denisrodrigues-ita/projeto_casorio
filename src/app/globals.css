@@ -3,3 +3,14 @@
 @tailwind utilities;
 
 
+/* @layer base {
+  nav {
+    @apply ;
+  }
+} */
+
+/* @layer components {
+  .textarea {
+    @apply ;
+  }
+} */
