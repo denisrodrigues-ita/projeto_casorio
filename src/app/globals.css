@@ -2,15 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* @layer base {
-  nav {
-    @apply ;
+@layer base {
+  body {
+    @apply bg-aqua-deep container text-slate-100;
   }
-} */
 
-/* @layer components {
-  .textarea {
-    @apply ;
+  svg {
+    @apply h-5 w-5 ms-2 transition-all duration-500;
   }
-} */
+}
+
+@layer components {
+  .linkMenu {
+    @apply bg-smalt-blue p-4 rounded-lg block font-semibold hover:saturate-150;
+  }
+
+  .btnMenu {
+    @apply bg-smalt-blue p-4 rounded-lg flex flex-row items-center w-full font-semibold mt-1 shadow shadow-smalt-blue hover:saturate-150;
+  }
+
+  .liMenu {
+    @apply mt-1 w-52 rounded-lg overflow-hidden duration-1000 ease-in-out shadow shadow-smalt-blue;
+  }
+}

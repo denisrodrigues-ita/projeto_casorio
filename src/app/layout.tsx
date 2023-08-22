@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className="bg-aqua-deep container">
+      <body>
         <Header />
         {children}
         <Footer />

@@ -1,6 +1,4 @@
 [
-  { "link": "/", "page": "Inicio" },
-  { "link": "/confirm-presence", "page": "Confirmar Presença" },
   { "link": "/costume", "page": "traje" },
   { "link": "/gifts", "page": "Lista de Presentes" },
   { "link": "/messages", "page": "Mensagens" },
