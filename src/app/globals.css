@@ -7,6 +7,14 @@
     @apply bg-aqua-deep container text-slate-100;
   }
 
+  header {
+    @apply flex justify-end mt-4;
+  }
+
+  nav {
+    @apply flex flex-col lg:flex-row gap-4;
+  }
+
   svg {
     @apply h-5 w-5 ms-2 transition-all duration-500;
   }
@@ -14,14 +22,14 @@
 
 @layer components {
   .linkMenu {
-    @apply bg-smalt-blue p-4 rounded-lg block font-semibold hover:saturate-150;
+    @apply bg-transparent px-4 py-2 font-semibold hover:bg-smalt-blue hover:rounded-lg hover:shadow hover:shadow-smalt-blue flex items-center;
   }
 
   .btnMenu {
-    @apply bg-smalt-blue p-4 rounded-lg flex flex-row items-center w-full font-semibold mt-1 shadow shadow-smalt-blue hover:saturate-150;
+    @apply bg-smalt-blue px-4 py-2 rounded-lg flex flex-row items-center font-semibold shadow shadow-smalt-blue hover:saturate-150;
   }
 
   .liMenu {
-    @apply mt-1 w-52 rounded-lg overflow-hidden duration-1000 ease-in-out shadow shadow-smalt-blue;
+    @apply duration-1000 rounded-lg my-2 ease-in-out shadow shadow-smalt-blue hover:scale-105;
   }
 }

@@ -4,6 +4,8 @@ import React from "react";
 import links from "@/json/links.json";
 import Link from "next/link";
 import { ChevronUpIcon } from "@heroicons/react/24/outline";
+import { HomeIcon } from "@heroicons/react/24/outline";
+import { CheckBadgeIcon } from "@heroicons/react/24/outline";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 
 const Header = () => {
@@ -15,32 +17,51 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-end mt-4">
+    <header className="relative">
       {/* <button>
         <Bars3Icon />
       </button> */}
-      <nav className="flex flex-col lg:flex-row gap-4">
+      <nav className="">
         <ul>
-          <li className="liMenu">
-            <Link className="linkMenu" href="/">Home</Link>
+          <li>
+            <Link className="linkMenu" href="/">
+              Inicio <HomeIcon />
+            </Link>
           </li>
         </ul>
+
         <ul>
-          <li className="liMenu">
-            <Link className="linkMenu" href="/confirm-presence">Confirmar Presença</Link>
+          <li>
+            <Link className="linkMenu" href="/confirm-presence">
+              Confirmar Presença <CheckBadgeIcon />
+            </Link>
           </li>
         </ul>
-        <ul>
-          <button onClick={handleOpen} className="btnMenu">
-            Ver Mais{" "}
-            <ChevronUpIcon className={isOpen ? "rotate-180" : "rotate-0"} />
-          </button>
+
+        <button
+          onClick={handleOpen}
+          onBlur={() => {
+            setIsOpen(false);
+          }}
+          className="btnMenu"
+        >
+          Ver Mais{" "}
+          <ChevronUpIcon className={isOpen ? "rotate-180" : "rotate-0"} />
+        </button>
+        <ul className="absolute translate-y-40 lg:translate-y-12 lg:translate-x-72">
           {links.map((link, index) => (
             <li
               key={index}
-              className={`${isOpen ? "max-h-48 opacity-100" : "max-h-0 opacity-0"} liMenu`}
+              className={`${
+                isOpen ? "max-h-48 opacity-100" : "max-h-0 opacity-0"
+              } liMenu`}
             >
-              <Link className="linkMenu" href={link.link}>{link.page}</Link>
+              <Link
+                className={`${isOpen ? "" : "hidden"} linkMenu`}
+                href={link.link}
+              >
+                {link.page}
+              </Link>
             </li>
           ))}
         </ul>
