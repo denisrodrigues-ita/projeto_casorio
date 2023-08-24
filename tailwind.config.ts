@@ -12,10 +12,11 @@ const config: Config = {
     },
     extend: {
       colors: {
-        "aqua-deep": "#004c45",// background
-        "surfie-green": "#118077",// text
-        "smalt-blue": "#52948b", // link
-        "submarine": "#b9c2c8", // border
+        primary: "#f7f3d5",
+        secondary: "#ffdabf",
+        tertiary: "##fa9b9b",
+        quaternary: "#e88087",
+        quinary: "#635063",
       },
     },
   },

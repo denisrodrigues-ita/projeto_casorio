@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   body {
-    @apply bg-aqua-deep container text-slate-100;
+    @apply bg-primary container text-secondary;
   }
 
   header {
-    @apply flex justify-end mt-4;
+    @apply flex flex-col justify-end items-end mt-4 relative;
   }
 
   nav {
@@ -18,18 +19,34 @@
   svg {
     @apply h-5 w-5 ms-2 transition-all duration-500;
   }
+
+  ul {
+    @apply bg-quinary rounded-lg;
+  }
 }
 
 @layer components {
   .linkMenu {
-    @apply bg-transparent px-4 py-2 font-semibold hover:bg-smalt-blue hover:rounded-lg hover:shadow hover:shadow-smalt-blue flex items-center;
+    @apply bg-tertiary px-4 py-2 font-semibold hover:bg-tertiary hover:rounded-lg hover:shadow hover:shadow-tertiary flex items-center;
   }
 
   .btnMenu {
-    @apply bg-smalt-blue px-4 py-2 rounded-lg flex flex-row items-center font-semibold shadow shadow-smalt-blue hover:saturate-150;
+    @apply bg-quaternary px-4 py-2 rounded-lg flex flex-row items-center font-semibold shadow shadow-tertiary hover:saturate-150;
   }
 
   .liMenu {
-    @apply duration-1000 rounded-lg my-2 ease-in-out shadow shadow-smalt-blue hover:scale-105;
+    @apply duration-1000 rounded-lg my-2 ease-in-out shadow shadow-tertiary hover:scale-105 hover:bg-quaternary;
+  }
+
+  .customUl {
+    @apply absolute translate-y-40 lg:translate-y-12 lg:translate-x-72;
+  }
+
+  .menuBtn {
+    @apply p-2 lg:hidden;
+  }
+
+  .menuSvg {
+    @apply h-8 w-8 m-0;
   }
 }

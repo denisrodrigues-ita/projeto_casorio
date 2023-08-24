@@ -17,10 +17,10 @@ const Header = () => {
   };
 
   return (
-    <header className="relative">
-      {/* <button>
-        <Bars3Icon />
-      </button> */}
+    <header>
+      <button className="menuBtn">
+        <Bars3Icon className="menuSvg" />
+      </button>
       <nav className="">
         <ul>
           <li>
@@ -48,7 +48,7 @@ const Header = () => {
           Ver Mais{" "}
           <ChevronUpIcon className={isOpen ? "rotate-180" : "rotate-0"} />
         </button>
-        <ul className="absolute translate-y-40 lg:translate-y-12 lg:translate-x-72">
+        <ul className="customUl">
           {links.map((link, index) => (
             <li
               key={index}
