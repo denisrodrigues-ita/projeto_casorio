@@ -48,18 +48,14 @@ const Header = () => {
           Ver Mais{" "}
           <ChevronUpIcon className={isOpen ? "rotate-180" : "rotate-0"} />
         </button>
-        <ul className="customUl">
+        <ul
+          className={`${
+            isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          } customUl`}
+        >
           {links.map((link, index) => (
-            <li
-              key={index}
-              className={`${
-                isOpen ? "max-h-48 opacity-100" : "max-h-0 opacity-0"
-              } liMenu`}
-            >
-              <Link
-                className={`${isOpen ? "" : "hidden"} linkMenu`}
-                href={link.link}
-              >
+            <li key={index} className={`liMenu`}>
+              <Link className={`linkMenu`} href={link.link}>
                 {link.page}
               </Link>
             </li>

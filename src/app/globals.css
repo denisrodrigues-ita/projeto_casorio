@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-image: url("../assets/blob-scatter.svg");
+  background-repeat: repeat;
+  background-size: cover;
+}
 
 @layer base {
   body {
@@ -27,7 +32,7 @@
 
 @layer components {
   .linkMenu {
-    @apply bg-tertiary px-4 py-2 font-semibold hover:bg-tertiary hover:rounded-lg hover:shadow hover:shadow-tertiary flex items-center;
+    @apply px-4 py-2 font-semibold hover:rounded-lg hover:shadow hover:shadow-tertiary flex items-center;
   }
 
   .btnMenu {
@@ -35,11 +40,11 @@
   }
 
   .liMenu {
-    @apply duration-1000 rounded-lg my-2 ease-in-out shadow shadow-tertiary hover:scale-105 hover:bg-quaternary;
+    @apply rounded-lg my-2 shadow shadow-tertiary hover:scale-105 hover:bg-quaternary;
   }
 
   .customUl {
-    @apply absolute translate-y-40 lg:translate-y-12 lg:translate-x-72;
+    @apply absolute translate-y-40 lg:translate-y-12 lg:translate-x-72 duration-1000 ease-in-out border-2 border-secondary;
   }
 
   .menuBtn {
