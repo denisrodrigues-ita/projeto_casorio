@@ -22,7 +22,7 @@ body {
   }
 
   svg {
-    @apply h-5 w-5 ms-2 transition-all duration-500;
+    @apply h-5 w-5 ms-2 transition-all duration-1000;
   }
 
   ul {
@@ -32,7 +32,7 @@ body {
 
 @layer components {
   .linkMenu {
-    @apply px-4 py-2 font-semibold hover:rounded-lg hover:shadow hover:shadow-tertiary flex items-center;
+    @apply px-4 py-2 font-semibold hover:rounded-lg hover:shadow hover:shadow-tertiary inline-flex items-center;
   }
 
   .btnMenu {
@@ -44,7 +44,7 @@ body {
   }
 
   .customUl {
-    @apply absolute translate-y-40 lg:translate-y-12 lg:translate-x-72 duration-1000 ease-in-out border-2 border-secondary;
+    @apply absolute translate-y-40 lg:translate-y-12 lg:translate-x-72 transition-all duration-1000 ease-in-out border-2 border-secondary;
   }
 
   .menuBtn {

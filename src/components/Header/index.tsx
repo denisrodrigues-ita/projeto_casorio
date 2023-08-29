@@ -9,19 +9,27 @@ import { CheckBadgeIcon } from "@heroicons/react/24/outline";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
-  const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = React.useState(false);
+  const [isOpenDropDown, setIsOpenDropDown] = React.useState(false);
+  const [isOpenHamburgerMenu, setIsOpenHamburgerMenu] = React.useState(false);
 
-  const handleOpen = () => {
-    setIsOpen(!isOpen);
+  const handleOpenDropDown = () => {
+    setIsOpenDropDown(!isOpenDropDown);
+  };
+
+  const handleOpenHamburgerMenu = () => {
+    setIsOpenHamburgerMenu(!isOpenHamburgerMenu);
   };
 
   return (
     <header>
-      <button className="menuBtn">
+      <button
+        onClick={handleOpenHamburgerMenu}
+        // type="button"
+        className="menuBtn"
+      >
         <Bars3Icon className="menuSvg" />
       </button>
-      <nav className="">
+      <nav className={`${isOpenHamburgerMenu ? "" : "hidden"} lg:flex`}>
         <ul>
           <li>
             <Link className="linkMenu" href="/">
@@ -38,24 +46,16 @@ const Header = () => {
           </li>
         </ul>
 
-        <button
-          onClick={handleOpen}
-          onBlur={() => {
-            setIsOpen(false);
-          }}
-          className="btnMenu"
-        >
+        <button onClick={handleOpenDropDown} className="btnMenu">
           Ver Mais{" "}
-          <ChevronUpIcon className={isOpen ? "rotate-180" : "rotate-0"} />
+          <ChevronUpIcon
+            className={isOpenDropDown ? "rotate-180" : "rotate-0"}
+          />
         </button>
-        <ul
-          className={`${
-            isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-          } customUl`}
-        >
+        <ul className={`${isOpenDropDown ? "block" : "hidden"} customUl`}>
           {links.map((link, index) => (
             <li key={index} className={`liMenu`}>
-              <Link className={`linkMenu`} href={link.link}>
+              <Link className={`linkMenu block`} href={link.link}>
                 {link.page}
               </Link>
             </li>
