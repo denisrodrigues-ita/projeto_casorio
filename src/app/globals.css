@@ -2,19 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   background-image: url("../assets/blob-scatter.svg");
   background-repeat: repeat;
   background-size: cover;
-}
+} */
 
 @layer base {
   body {
-    @apply bg-primary container text-secondary;
+    @apply bg-quinary container text-primary;
   }
 
   header {
-    @apply flex flex-col justify-end items-end mt-4 relative lg:bg-transparent rounded-lg;
+    @apply flex flex-col justify-end items-end mt-4 mb-20 relative lg:bg-transparent rounded-lg;
   }
 
   nav {
@@ -64,6 +64,6 @@ body {
   }
 
   .menuUl {
-    @apply hover:scale-105 hover:bg-quaternary hover:text-primary duration-300 transition-all ease-in-out;
+    @apply  hover:bg-quaternary hover:text-primary duration-300 transition-all ease-in-out;
   }
 }
