@@ -14,7 +14,7 @@ body {
   }
 
   header {
-    @apply flex flex-col justify-end items-end mt-4 relative;
+    @apply flex flex-col justify-end items-end mt-4 relative lg:bg-transparent rounded-lg;
   }
 
   nav {
@@ -22,36 +22,48 @@ body {
   }
 
   svg {
-    @apply h-5 w-5 ms-2 transition-all duration-1000;
+    @apply h-5 w-5 ms-2;
   }
 
   ul {
-    @apply bg-quinary rounded-lg;
+    @apply bg-secondary text-quinary rounded-lg;
   }
 }
 
 @layer components {
   .linkMenu {
-    @apply px-4 py-2 font-semibold hover:rounded-lg hover:shadow hover:shadow-tertiary inline-flex items-center;
+    @apply px-4 py-2 font-semibold hover:rounded-lg hover:shadow inline-flex w-full items-center;
   }
 
   .btnMenu {
-    @apply bg-quaternary px-4 py-2 rounded-lg flex flex-row items-center font-semibold shadow shadow-tertiary hover:saturate-150;
+    @apply bg-quaternary px-4 py-2 rounded-lg flex flex-row items-center font-semibold shadow hover:saturate-150;
+  }
+
+  .chevronSvg {
+    @apply transition-all ease-in-out duration-1000;
   }
 
   .liMenu {
-    @apply rounded-lg my-2 shadow shadow-tertiary hover:scale-105 hover:bg-quaternary;
+    @apply rounded-lg my-2 shadow  hover:scale-105 hover:bg-quaternary transition-all ease-in-out duration-300 hover:text-primary;
   }
 
   .customUl {
-    @apply absolute translate-y-40 lg:translate-y-12 lg:translate-x-72 transition-all duration-1000 ease-in-out border-2 border-secondary;
+    @apply absolute translate-y-40 lg:translate-y-12 lg:translate-x-72 border-2 border-secondary;
   }
 
   .menuBtn {
     @apply p-2 lg:hidden;
   }
 
+  .hamburgerMenu {
+    @apply bg-quaternary rounded-lg p-2 mb-4;
+  }
+
   .menuSvg {
     @apply h-8 w-8 m-0;
+  }
+
+  .menuUl {
+    @apply hover:scale-105 hover:bg-quaternary hover:text-primary duration-300 transition-all ease-in-out;
   }
 }

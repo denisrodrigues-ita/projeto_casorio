@@ -7,6 +7,7 @@ import { ChevronUpIcon } from "@heroicons/react/24/outline";
 import { HomeIcon } from "@heroicons/react/24/outline";
 import { CheckBadgeIcon } from "@heroicons/react/24/outline";
 import { Bars3Icon } from "@heroicons/react/24/outline";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
 const Header = () => {
   const [isOpenDropDown, setIsOpenDropDown] = React.useState(false);
@@ -24,13 +25,18 @@ const Header = () => {
     <header>
       <button
         onClick={handleOpenHamburgerMenu}
-        // type="button"
-        className="menuBtn"
+        type="button"
+        className="menuBtn hamburgerMenu"
       >
-        <Bars3Icon className="menuSvg" />
+        {isOpenHamburgerMenu ? (
+          <XMarkIcon className="menuSvg" />
+        ) : (
+          <Bars3Icon className="menuSvg" />
+        )}
+        {/* <Bars3Icon className="menuSvg" /> */}
       </button>
       <nav className={`${isOpenHamburgerMenu ? "" : "hidden"} lg:flex`}>
-        <ul>
+        <ul className="menuUl">
           <li>
             <Link className="linkMenu" href="/">
               Inicio <HomeIcon />
@@ -38,7 +44,7 @@ const Header = () => {
           </li>
         </ul>
 
-        <ul>
+        <ul className="menuUl">
           <li>
             <Link className="linkMenu" href="/confirm-presence">
               Confirmar Presença <CheckBadgeIcon />
@@ -49,13 +55,15 @@ const Header = () => {
         <button onClick={handleOpenDropDown} className="btnMenu">
           Ver Mais{" "}
           <ChevronUpIcon
-            className={isOpenDropDown ? "rotate-180" : "rotate-0"}
+            className={`${
+              isOpenDropDown ? "rotate-180" : "rotate-0"
+            } chevronSvg`}
           />
         </button>
         <ul className={`${isOpenDropDown ? "block" : "hidden"} customUl`}>
           {links.map((link, index) => (
             <li key={index} className={`liMenu`}>
-              <Link className={`linkMenu block`} href={link.link}>
+              <Link className={`linkMenu`} href={link.link}>
                 {link.page}
               </Link>
             </li>
