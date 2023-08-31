@@ -1,10 +1,10 @@
 'use client';
 
-import CountdownTimer from "@/components/countdown";
+import Countdown from "@/components/Countdown";
 import React from "react";
 
 const Home = () => {
-  const targetDate = new Date("2024-08-24 17:00:00");
+  const targetDate = new Date("2024-08-24 00:00:00");
 
   return (
     <div className="flex flex-col justify-center items-center">
@@ -17,7 +17,7 @@ const Home = () => {
       </div>
       <div className="mt-8">
         <p className="text-2xl">Contagem regressiva para o grande dia.</p>
-        <CountdownTimer targetDate={targetDate} />
+        <Countdown targetDate={targetDate} />
       </div>
     </div>
   );
