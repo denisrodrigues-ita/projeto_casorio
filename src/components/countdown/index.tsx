@@ -13,7 +13,7 @@ interface TimeLeft {
   seconds: string;
 }
 
-const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
+const Countdown: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   const calculateTimeLeft = (): TimeLeft => {
     const currentTime = new Date().getTime();
     const difference = targetDate.getTime() - currentTime;
@@ -92,4 +92,4 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   );
 };
 
-export default CountdownTimer;
+export default Countdown;
