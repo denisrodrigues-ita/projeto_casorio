@@ -1,9 +1,10 @@
-'use client';
+"use client";
 
-import Countdown from "@/components/Countdown";
 import React from "react";
+import dynamic from "next/dynamic";
 
 const Home = () => {
+  const NoSSR = dynamic(() => import("@/components/Countdown"), { ssr: false });
   const targetDate = new Date("2024-08-24 00:00:00");
 
   return (
@@ -17,7 +18,7 @@ const Home = () => {
       </div>
       <div className="mt-8">
         <p className="text-2xl">Contagem regressiva para o grande dia.</p>
-        <Countdown targetDate={targetDate} />
+        <NoSSR targetDate={targetDate} />
       </div>
     </div>
   );
