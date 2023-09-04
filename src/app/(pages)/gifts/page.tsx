@@ -31,15 +31,15 @@ const Gifts = () => {
           />
         </button>
       </div>
-      <h1
+      <p
         className={`${
           isOpen
             ? "opacity-100 max-h-full duration-500 ease-in-out"
             : "opacity-0 max-h-0 duration-500 ease-in-out"
-        } text-justify`}
+        } text-justify border border-quaternary p-2 pt-4 rounded-b-lg border-t-0 -translate-y-2`}
       >
         {data.texto_geral.texto}
-      </h1>
+      </p>
     </div>
   );
 };

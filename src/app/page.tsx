@@ -6,7 +6,7 @@ import data from "@/json/data.json";
 
 const Home = () => {
   const NoSSR = dynamic(() => import("@/components/Countdown"), { ssr: false });
-  const targetDate = new Date(`${data.data_casamento} 00:00:00`);
+  const targetDate = new Date(`${data.contagem_regressiva}`);
 
   return (
     <div className="flex flex-col justify-center items-center">

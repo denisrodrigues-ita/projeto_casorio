@@ -33,7 +33,6 @@ const Header = () => {
         ) : (
           <Bars3Icon className="menuSvg" />
         )}
-        {/* <Bars3Icon className="menuSvg" /> */}
       </button>
       <nav className={`${isOpenHamburgerMenu ? "" : "hidden"} lg:flex`}>
         <ul className="menuUl">
