@@ -10,15 +10,17 @@ const Home = () => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <h1 className="text-9xl ">
-        {data.nome_noivo} <span className="text-7xl">&</span>
+      <h1 className="text-7xl sm:text-9xl">
+        {data.nome_noivo} <span className="text-5xl sm:text-7xl">&</span>
       </h1>
-      <h1 className="text-9xl ml-24">{data.nome_noiva}.</h1>
-      <div className="border-quaternary border-y-2 mt-4 w-4/5 sm:w-2/4 lg:w-4/12 flex justify-center">
-        <h2 className="text-6xl my-4">{data.data_casamento}</h2>
+      <h1 className="text-7xl sm:text-9xl ml-8">{data.nome_noiva}.</h1>
+      <div className="border-quaternary border-y-2 mt-4 sm:w-2/4 lg:w-4/12 flex justify-center">
+        <h2 className="text-4xl sm:text-6xl my-4">{data.data_casamento}</h2>
       </div>
       <div className="mt-8">
-        <p className="text-2xl">Contagem regressiva para o grande dia.</p>
+        <p className="text-lg sm:text-2xl">
+          Contagem regressiva para o grande dia.
+        </p>
         <NoSSR targetDate={targetDate} />
       </div>
     </div>

@@ -2,7 +2,10 @@
 
 import React from "react";
 import data from "@/json/data.json";
+import Cards from "@/components/Cards";
 import { ChevronUpIcon } from "@heroicons/react/24/outline";
+import giftsList from "@/json/pix.json";
+import { IPixList } from "@/model/interface";
 
 const Gifts = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -40,6 +43,7 @@ const Gifts = () => {
       >
         {data.texto_geral.texto}
       </p>
+      <Cards giftsList={giftsList} />
     </div>
   );
 };
