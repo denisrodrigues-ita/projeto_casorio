@@ -3,49 +3,56 @@
     "pix": "50",
     "image": "/assets/gifts/gift1.svg",
     "description": "Para nos ajudar com um bloco de tijolo",
-    "QRCode": "",
-    "pix_copia_e_cola": ""
+    "QRCode": "/assets/qrCode/qrCode100.png",
+    "chave_pix": "123456",
+    "QRCode_copia_e_cola": "2"
   },
   {
     "pix": "100",
     "image": "/assets/gifts/gift2.svg",
     "description": "Para nos ajudar com a lua de mel",
-    "QRCode": "",
-    "pix_copia_e_cola": ""
+    "QRCode": "/assets/qrCode/qrCode100.png",
+    "chave_pix": "123456",
+    "QRCode_copia_e_cola": "3"
   },
   {
     "pix": "150",
     "image": "/assets/gifts/gift3.svg",
-    "description": "Para nos ajudar com os moveis da casa nova",	
-    "QRCode": "",
-    "pix_copia_e_cola": ""
+    "description": "Para nos ajudar com os moveis da casa nova",
+    "QRCode": "/assets/qrCode/qrCode100.png",
+    "chave_pix": "123456",
+    "QRCode_copia_e_cola": "4"
   },
   {
     "pix": "200",
     "image": "/assets/gifts/gift4.svg",
     "description": "Para nos ajudar com a viajem de lua de mel",
-    "QRCode": "",
-    "pix_copia_e_cola": ""
+    "QRCode": "/assets/qrCode/qrCode100.png",
+    "chave_pix": "123456",
+    "QRCode_copia_e_cola": "5"
   },
   {
     "pix": "250",
     "image": "/assets/gifts/gift5.svg",
     "description": "Para nos ajudar com o bento",
-    "QRCode": "",
-    "pix_copia_e_cola": ""
+    "QRCode": "/assets/qrCode/qrCode100.png",
+    "chave_pix": "123456",
+    "QRCode_copia_e_cola": "6"
   },
   {
     "pix": "500",
     "image": "/assets/gifts/gift6.svg",
     "description": "Para nos ajudar com o transporte",
-    "QRCode": "",
-    "pix_copia_e_cola": ""
+    "QRCode": "/assets/qrCode/qrCode100.png",
+    "chave_pix": "123456",
+    "QRCode_copia_e_cola": "7"
   },
   {
     "pix": "1000",
     "image": "/assets/gifts/gift7.svg",
     "description": "Para nos ajudar com os bebes",
-    "QRCode": "",
-    "pix_copia_e_cola": ""
+    "QRCode": "/assets/qrCode/qrCode100.png",
+    "chave_pix": "123456",
+    "QRCode_copia_e_cola": "8"
   }
 ]

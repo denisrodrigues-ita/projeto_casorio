@@ -29,7 +29,14 @@ const Card = ({ gift }: { gift: IPix }) => {
           Contribuir
         </button>
       </div>
-      <Modal showModal={showModal} setShowModal={setShowModal} />
+      <Modal
+        showModal={showModal}
+        setShowModal={setShowModal}
+        img={gift.QRCode}
+        valor={gift.pix}
+        pix_copia_e_cola={gift.QRCode_copia_e_cola}
+        chave_pix={gift.chave_pix}
+      />
     </div>
   );
 };

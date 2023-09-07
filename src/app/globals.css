@@ -8,6 +8,10 @@
   background-size: cover;
 } */
 
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+}
+
 @layer base {
   body {
     @apply bg-quinary container text-primary;
