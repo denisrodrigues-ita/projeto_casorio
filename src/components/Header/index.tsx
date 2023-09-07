@@ -55,7 +55,7 @@ const Header = () => {
           Ver Mais{" "}
           <ChevronUpIcon
             className={`${
-              isOpenDropDown ? "rotate-180" : "rotate-0"
+              isOpenDropDown ? "rotate-0" : "rotate-180"
             } chevronSvg`}
           />
         </button>

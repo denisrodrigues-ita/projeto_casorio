@@ -26,7 +26,11 @@
   }
 
   ul {
-    @apply bg-secondary text-quinary rounded-lg;
+    @apply bg-secondary text-quinary rounded-lg z-10;
+  }
+
+  p {
+    @apply text-lg;
   }
 }
 
@@ -40,11 +44,11 @@
   }
 
   .chevronSvg {
-    @apply transition-all ease-in-out duration-1000;
+    @apply transition-all ease-in-out duration-500;
   }
 
   .liMenu {
-    @apply rounded-lg my-2 shadow  hover:scale-105 hover:bg-quaternary transition-all ease-in-out duration-300 hover:text-primary;
+    @apply rounded-lg my-2 shadow  hover:scale-105 hover:bg-quaternary transition-all ease-in-out duration-500 hover:text-primary;
   }
 
   .customUl {

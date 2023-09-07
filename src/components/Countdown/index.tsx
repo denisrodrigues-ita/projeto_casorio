@@ -65,25 +65,25 @@ const Countdown: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   return (
     <div className="mt-4 flex justify-center gap-8">
       <div className="flex flex-col justify-center items-center m-auto">
-        <p className="text-2xl sm:text-4xl bg-quaternary rounded-lg p-2 w-12 sm:w-16 text-center">
+        <p className="text-3xl sm:text-4xl bg-quaternary rounded-lg p-2 w-12 sm:w-16 text-center">
           {timeLeft.days}
         </p>
         <p>Dias</p>
       </div>
       <div className="flex flex-col justify-center items-center m-auto">
-        <p className="text-2xl sm:text-4xl bg-quaternary rounded-lg p-2 w-12 sm:w-16 text-center">
+        <p className="text-3xl sm:text-4xl bg-quaternary rounded-lg p-2 w-12 sm:w-16 text-center">
           {timeLeft.hours}
         </p>
         <p>Horas</p>
       </div>
       <div className="flex flex-col justify-center items-center m-auto">
-        <p className="text-2xl sm:text-4xl bg-quaternary rounded-lg p-2 w-12 sm:w-16 text-center">
+        <p className="text-3xl sm:text-4xl bg-quaternary rounded-lg p-2 w-12 sm:w-16 text-center">
           {timeLeft.minutes}
         </p>
         <p>Minutos</p>
       </div>
       <div className="flex flex-col justify-center items-center m-auto">
-        <p className="text-2xl sm:text-4xl bg-quaternary rounded-lg p-2 w-12 sm:w-16 text-center">
+        <p className="text-3xl sm:text-4xl bg-quaternary rounded-lg p-2 w-12 sm:w-16 text-center">
           {timeLeft.seconds}
         </p>
         <p>Segundos</p>
