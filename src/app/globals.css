@@ -15,6 +15,14 @@
     @apply flex flex-col justify-end items-end mt-4 mb-20 relative lg:bg-transparent rounded-lg;
   }
 
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
   nav {
     @apply flex flex-col lg:flex-row gap-4;
   }
