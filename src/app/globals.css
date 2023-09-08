@@ -2,19 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  background-image: url("../assets/blob-scatter.svg");
-  background-repeat: repeat;
-  background-size: cover;
-} */
-
 .backdrop-blur {
   backdrop-filter: blur(10px);
 }
 
 @layer base {
   body {
-    @apply bg-quinary container text-primary;
+    @apply bg-quinary container text-primary text-lg;
   }
 
   header {
@@ -26,25 +20,29 @@
   }
 
   svg {
-    @apply h-5 w-5 ms-2;
+    @apply h-5 w-5 ms-2 inline;
   }
 
   ul {
     @apply bg-secondary text-quinary rounded-lg z-10;
   }
 
-  p {
-    @apply text-lg;
+  button {
+    @apply px-4 py-2 rounded-lg shadow hover:saturate-150;
   }
 }
 
 @layer components {
-  .linkMenu {
-    @apply px-4 py-2 font-semibold hover:rounded-lg hover:shadow inline-flex w-full items-center;
+  .btn1 {
+    @apply bg-quaternary flex flex-row items-center justify-center font-semibold;
   }
 
-  .btnMenu {
-    @apply bg-quaternary px-4 py-2 rounded-lg flex flex-row items-center font-semibold shadow hover:saturate-150;
+  .btn2 {
+    @apply bg-quinary flex flex-row items-center justify-center font-semibold;
+  }
+
+  .linkMenu {
+    @apply px-4 py-2 font-semibold hover:rounded-lg hover:shadow inline-flex w-full items-center;
   }
 
   .chevronSvg {
@@ -56,10 +54,10 @@
   }
 
   .customUl {
-    @apply absolute translate-y-40 lg:translate-y-12 lg:translate-x-72 border-2 border-secondary;
+    @apply absolute translate-y-44 lg:translate-y-12 lg:translate-x-72 border-2 border-secondary;
   }
 
-  .menuBtn {
+  .hamburgerBtn {
     @apply p-2 lg:hidden;
   }
 
@@ -67,7 +65,7 @@
     @apply bg-quaternary rounded-lg p-2 mb-4;
   }
 
-  .menuSvg {
+  .svgMenu {
     @apply h-8 w-8 m-0;
   }
 

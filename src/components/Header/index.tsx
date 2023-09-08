@@ -26,12 +26,12 @@ const Header = () => {
       <button
         onClick={handleOpenHamburgerMenu}
         type="button"
-        className="menuBtn hamburgerMenu"
+        className="hamburgerBtn hamburgerMenu"
       >
         {isOpenHamburgerMenu ? (
-          <XMarkIcon className="menuSvg" />
+          <XMarkIcon className="svgMenu" />
         ) : (
-          <Bars3Icon className="menuSvg" />
+          <Bars3Icon className="svgMenu" />
         )}
       </button>
       <nav className={`${isOpenHamburgerMenu ? "" : "hidden"} lg:flex`}>
@@ -51,7 +51,7 @@ const Header = () => {
           </li>
         </ul>
 
-        <button onClick={handleOpenDropDown} className="btnMenu">
+        <button onClick={handleOpenDropDown} className="btn1 justify-start">
           Ver Mais{" "}
           <ChevronUpIcon
             className={`${

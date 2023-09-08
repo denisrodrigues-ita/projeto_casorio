@@ -19,23 +19,25 @@ const Card = ({ gift }: { gift: IPix }) => {
         <p className="mt-2">{gift.description}</p>
         <h2 className="text-4xl flex">
           <span className="text-sm leading-8">R$</span>
-          {gift.pix}
+          {gift.value}
         </h2>
         <button
           type="button"
           onClick={() => setShowModal(true)}
-          className="px-4 py-2 rounded-lg bg-quaternary shadow-lg hover:saturate-150 text-xl font-bold"
+          className="btn1"
         >
-          Contribuir
+          Fazer Pix
         </button>
       </div>
       <Modal
         showModal={showModal}
         setShowModal={setShowModal}
-        img={gift.QRCode}
-        valor={gift.pix}
-        pix_copia_e_cola={gift.QRCode_copia_e_cola}
-        chave_pix={gift.chave_pix}
+        value={gift.value}
+        qr_code_img={gift.qr_code_img}
+        pix_key={gift.pix_key}
+        code_qr_code={gift.code_qr_code}
+        image={""}
+        description={""}
       />
     </div>
   );

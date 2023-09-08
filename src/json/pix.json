@@ -1,58 +1,58 @@
 [
   {
-    "pix": "50",
+    "value": "50",
     "image": "/assets/gifts/gift1.svg",
     "description": "Para nos ajudar com um bloco de tijolo",
-    "QRCode": "/assets/qrCode/qrCode100.png",
-    "chave_pix": "123456",
-    "QRCode_copia_e_cola": "2"
+    "qr_code_img": "/assets/qrCode/qrCode100.png",
+    "pix_key": "123456",
+    "code_qr_code": "2"
   },
   {
-    "pix": "100",
+    "value": "100",
     "image": "/assets/gifts/gift2.svg",
     "description": "Para nos ajudar com a lua de mel",
-    "QRCode": "/assets/qrCode/qrCode100.png",
-    "chave_pix": "123456",
-    "QRCode_copia_e_cola": "3"
+    "qr_code_img": "/assets/qrCode/qrCode100.png",
+    "pix_key": "123456",
+    "code_qr_code": "3"
   },
   {
-    "pix": "150",
+    "value": "150",
     "image": "/assets/gifts/gift3.svg",
     "description": "Para nos ajudar com os moveis da casa nova",
-    "QRCode": "/assets/qrCode/qrCode100.png",
-    "chave_pix": "123456",
-    "QRCode_copia_e_cola": "4"
+    "qr_code_img": "/assets/qrCode/qrCode100.png",
+    "pix_key": "123456",
+    "code_qr_code": "4"
   },
   {
-    "pix": "200",
+    "value": "200",
     "image": "/assets/gifts/gift4.svg",
     "description": "Para nos ajudar com a viajem de lua de mel",
-    "QRCode": "/assets/qrCode/qrCode100.png",
-    "chave_pix": "123456",
-    "QRCode_copia_e_cola": "5"
+    "qr_code_img": "/assets/qrCode/qrCode100.png",
+    "pix_key": "123456",
+    "code_qr_code": "5"
   },
   {
-    "pix": "250",
+    "value": "250",
     "image": "/assets/gifts/gift5.svg",
     "description": "Para nos ajudar com o bento",
-    "QRCode": "/assets/qrCode/qrCode100.png",
-    "chave_pix": "123456",
-    "QRCode_copia_e_cola": "6"
+    "qr_code_img": "/assets/qrCode/qrCode100.png",
+    "pix_key": "123456",
+    "code_qr_code": "6"
   },
   {
-    "pix": "500",
+    "value": "500",
     "image": "/assets/gifts/gift6.svg",
     "description": "Para nos ajudar com o transporte",
-    "QRCode": "/assets/qrCode/qrCode100.png",
-    "chave_pix": "123456",
-    "QRCode_copia_e_cola": "7"
+    "qr_code_img": "/assets/qrCode/qrCode100.png",
+    "pix_key": "123456",
+    "code_qr_code": "7"
   },
   {
-    "pix": "1000",
+    "value": "1000",
     "image": "/assets/gifts/gift7.svg",
     "description": "Para nos ajudar com os bebes",
-    "QRCode": "/assets/qrCode/qrCode100.png",
-    "chave_pix": "123456",
-    "QRCode_copia_e_cola": "8"
+    "qr_code_img": "/assets/qrCode/qrCode100.png",
+    "pix_key": "123456",
+    "code_qr_code": "8"
   }
 ]

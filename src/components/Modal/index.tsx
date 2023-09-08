@@ -7,10 +7,10 @@ import { DocumentDuplicateIcon, CheckIcon } from "@heroicons/react/24/outline";
 const Modal = ({
   showModal,
   setShowModal,
-  img,
-  valor,
-  pix_copia_e_cola,
-  chave_pix,
+  qr_code_img,
+  value,
+  code_qr_code,
+  pix_key,
 }: IModal) => {
   const [isCopy, setIsCopy] = React.useState(false);
   const copyToClipboard = useClipboard();
@@ -19,14 +19,13 @@ const Modal = ({
     if (isCopy) {
       return (
         <p>
-          Copiado <CheckIcon className="w-5 h-5 inline-block" />
+          Copiado <CheckIcon />
         </p>
       );
     } else {
       return (
         <p>
-          Pix copia e cola{" "}
-          <DocumentDuplicateIcon className="w-5 h-5 inline-block" />
+          Pix copia e cola <DocumentDuplicateIcon />
         </p>
       );
     }
@@ -34,7 +33,6 @@ const Modal = ({
 
   const handleIsCopy = () => {
     setIsCopy(true);
-    setTimeout(() => setIsCopy(false), 2000);
   };
 
   return (
@@ -52,24 +50,23 @@ const Modal = ({
           <div className="relative bg-quaternary rounded-lg shadow">
             {/* <!-- Modal header --> */}
             <div className="flex items-start justify-between p-4 border-b rounded-t border-primary">
-              <h3 className="text-xl font-semibold text-primary">
-                Pix de R$ {valor}
-              </h3>
+              <h3 className="text-xl font-semibold">Pix de R$ {value}</h3>
             </div>
             {/* <!-- Modal body --> */}
             <div className="p-6 space-y-6">
               <Image
-                src={img}
+                src={qr_code_img}
                 alt="QR Code"
                 width={300}
                 height={300}
                 loading="lazy"
               />
               <button
-                className="px-4 py-2 bg-quinary rounded-lg font-bold text-primary hover:saturate-150 shadow"
+                className="btn2"
                 type="button"
+                disabled={isCopy}
                 onClick={() => {
-                  copyToClipboard(pix_copia_e_cola);
+                  copyToClipboard(code_qr_code);
                   handleIsCopy();
                 }}
               >
@@ -78,16 +75,19 @@ const Modal = ({
               <p>
                 Ou use a chave pix abaixo:
                 <br />
-                <span className="font-bold">{chave_pix}</span>
+                <span className="font-bold">{pix_key}</span>
               </p>
             </div>
             {/* <!-- Modal footer --> */}
             <div className="flex items-center p-6 space-x-2 border-t border-primary rounded-b">
               <button
-                onClick={() => setShowModal(false)}
+                onClick={() => {
+                  setShowModal(false);
+                  setIsCopy(false);
+                }}
                 data-modal-hide="defaultModal"
                 type="button"
-                className="px-4 py-2 bg-quinary rounded-lg font-bold text-primary hover:saturate-150 shadow"
+                className="btn2"
               >
                 Fechar
               </button>

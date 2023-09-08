@@ -3,19 +3,15 @@ export interface IPixList {
 }
 
 export interface IPix {
-  pix: string;
+  value: string;
   image: string;
   description: string;
-  QRCode: string;
-  QRCode_copia_e_cola: string;
-  chave_pix: string;
+  qr_code_img: string;
+  pix_key: string;
+  code_qr_code: string;
 }
 
-export interface IModal {
+export interface IModal extends IPix {
   showModal: boolean;
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
-  valor: string;
-  img: string;
-  pix_copia_e_cola: string;
-  chave_pix: string;
 }

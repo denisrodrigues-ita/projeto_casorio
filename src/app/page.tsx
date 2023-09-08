@@ -13,12 +13,12 @@ const Home = () => {
       <h1 className="text-8xl sm:text-9xl">
         {data.nome_noivo} <span className="text-5xl sm:text-7xl">&</span>
       </h1>
-      <h1 className="text-8xl sm:text-9xl ml-8 sm:ml-16">{data.nome_noiva}.</h1>
+      <h1 className="text-8xl sm:text-9xl">{data.nome_noiva}.</h1>
       <div className="border-quaternary border-y-2 mt-4 sm:w-2/4 lg:w-4/12 flex justify-center">
         <h2 className="text-5xl sm:text-6xl my-4">{data.data_casamento}</h2>
       </div>
       <div className="mt-8">
-        <p className="text-lg sm:text-2xl">
+        <p className="text-lg sm:text-2xl text-center">
           Contagem regressiva para o grande dia.
         </p>
         <NoSSR targetDate={targetDate} />
