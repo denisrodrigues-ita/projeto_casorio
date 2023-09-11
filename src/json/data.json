@@ -3,6 +3,7 @@
   "nome_noiva": "Letícia",
   "contagem_regressiva": "2024.08.24 00:00:00",
   "data_casamento": "24.08.2024",
+  "data_e_horario": "24 de Agosto ás 17:00",
   "texto_geral": {
     "texto": "Queridos amigos e familiares, à medida que nosso grande dia se aproxima, estamos preenchidos com gratidão e alegria por compartilhar este momento especial com todos vocês. Nosso casamento não é apenas a união de duas almas, mas também o começo de uma jornada emocionante e significativa. Compartilhamos sonhos de construir um lar repleto de amor e memórias, assim como de explorar o mundo juntos em uma lua de mel inesquecível. Ao invés de presentes tradicionais, gostaríamos de convidá-los a fazer parte desses momentos marcantes. Suas contribuições, independentemente do tamanho, serão uma parte valiosa das fundações que estamos estabelecendo e das memórias que estamos criando. Desde o alicerce de nossa casa até as experiências em nossa lua de mel, cada contribuição carrega um significado profundo e nos aproxima ainda mais de vocês. Agradecemos de coração por todo o amor e apoio que nos deram ao longo de nossa jornada. Suas contribuições não são apenas presentes materiais, mas expressões do carinho que compartilhamos. Mal podemos esperar para celebrar este momento com todos vocês e criar memórias que durarão uma vida inteira. Obrigado por fazerem parte da nossa história. Com amor e gratidão"
   },
@@ -13,5 +14,14 @@
   "lua_de_mel": {
     "titulo": "Contribuição para Nossa Lua de Mel dos Sonhos",
     "descricao": "Queridos amigos e familiares, enquanto embarcamos na emocionante jornada do casamento, estamos animados em pensar na lua de mel que seguirá. Nossa viagem não é apenas um destino, mas sim um marco simbólico em nosso começo. Convidamos vocês a nos ajudarem a tornar essa viagem ainda mais inesquecível, contribuindo para experiências únicas que iremos compartilhar como recém-casados. Cada memória que faremos será enriquecida pela generosidade e carinho de vocês. Agradecemos do fundo do coração por fazerem parte deste capítulo tão especial de nossas vidas."
-  }
+  },
+  "traje": "Passeio Completo",
+  "endereco": {
+    "local": "Quinta das Flores",
+    "rua": "R. Haroldo F da Lavra",
+    "cidade": "Itamonte",
+    "UF": "MG",
+    "CEP": "37466-000"
+  },
+  "maps" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12418.159852057193!2d-44.83550394827488!3d-22.280224193061546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9e0f44fd74b88d%3A0xa4761561a600d1e!2sQuintas%20das%20Flores!5e0!3m2!1spt-BR!2sbr!4v1694465965204!5m2!1spt-BR!2sbr"
 }

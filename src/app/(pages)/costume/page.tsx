@@ -1,18 +1,29 @@
 import React from "react";
 import Image from "next/image";
-import suit1 from "../../../../public/assets/suits/suit1.svg";
-import suit2 from "../../../../public/assets/suits/suit2.svg";
-import suit3 from "../../../../public/assets/suits/suit3.svg";
+import { suit1, suit2, suit3 } from "@/assets/suits";
+import data from "@/json/data.json";
 
 const Costume = () => {
   return (
     <div className="flex flex-col justify-center items-center ">
       <h2>Traje</h2>
-      <h3>Passeio Completo</h3>
+      <h3>{data.traje}</h3>
       <div className="flex my-8">
-        <Image src={suit1} alt="pessoa de traje social" width={200} />
-        <Image src={suit2} alt="pessoa de traje social" width={200} />
-        <Image src={suit3} alt="pessoa de traje social" width={200} />
+        <Image
+          src={suit2}
+          alt="pessoa de traje social"
+          className="w-28 sm:w-40 md:w-48 lg:w-full"
+        />
+        <Image
+          src={suit3}
+          alt="pessoa de traje social"
+          className="w-28 sm:w-40 md:w-48 lg:w-full"
+        />
+        <Image
+          src={suit1}
+          alt="pessoa de traje social"
+          className="w-28 sm:w-40 md:w-48 lg:w-full"
+        />
       </div>
     </div>
   );

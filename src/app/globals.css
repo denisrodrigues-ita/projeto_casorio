@@ -36,7 +36,7 @@
   }
 
   button {
-    @apply px-4 py-2 rounded-lg shadow hover:saturate-150;
+    @apply px-4 py-2 rounded-lg shadow hover:opacity-90;
   }
 }
 

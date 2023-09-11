@@ -1,8 +1,6 @@
 [
   { "link": "/costume", "page": "Traje" },
   { "link": "/gifts", "page": "Lista de Presentes" },
-  { "link": "/messages", "page": "Mensagens" },
-  { "link": "/our-story", "page": "Nossa História" },
   { "link": "/place", "page": "Local" },
   { "link": "/save-the-date", "page": "Save the Date" },
   { "link": "/tips", "page": "Dicas" }
