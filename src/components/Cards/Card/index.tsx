@@ -16,9 +16,9 @@ const Card = ({ gift }: { gift: IPix }) => {
         loading="lazy"
         className="m-auto"
       />
-      <div className="flex flex-col">
-        <p className="mt-2">{gift.description}</p>
-        <h2 className="text-4xl flex">
+      <div className="flex flex-col mt-2">
+        <p>{gift.description}</p>
+        <h2 className="flex">
           <span className="text-sm leading-8">R$</span>
           {gift.value}
         </h2>
