@@ -18,9 +18,7 @@ const Home = () => {
         <h2 className="text-5xl sm:text-6xl my-4">{data.data_casamento}</h2>
       </div>
       <div className="mt-8">
-        <p className="text-lg sm:text-2xl text-center">
-          Contagem regressiva para o grande dia.
-        </p>
+        <h3 className="text-center">Contagem regressiva para o grande dia.</h3>
         <NoSSR targetDate={targetDate} />
       </div>
     </div>

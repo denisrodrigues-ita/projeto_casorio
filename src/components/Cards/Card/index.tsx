@@ -14,6 +14,7 @@ const Card = ({ gift }: { gift: IPix }) => {
         width={300}
         height={300}
         loading="lazy"
+        className="m-auto"
       />
       <div className="flex flex-col">
         <p className="mt-2">{gift.description}</p>
