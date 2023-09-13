@@ -2,6 +2,5 @@
   { "link": "/costume", "page": "Traje" },
   { "link": "/gifts", "page": "Lista de Presentes" },
   { "link": "/place", "page": "Local" },
-  { "link": "/save-the-date", "page": "Save the Date" },
   { "link": "/tips", "page": "Dicas" }
 ]

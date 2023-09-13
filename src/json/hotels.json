@@ -1,0 +1,28 @@
+[
+  {
+    "nome": "Ribeirão do Ouro",
+    "img": "/assets/hotels/img1.jpg",
+    "endereco": {
+      "rua": "BR 354",
+      "numero": "KM 759",
+      "bairro": "",
+      "cidade": "Itamonte",
+      "estado": "MG",
+      "cep": "37466-000",
+      "telefone": "(35) 3363-1082"
+    }
+  },
+  {
+    "nome": "Mira Serra",
+    "img": "/assets/hotels/img2.jpg",
+    "endereco": {
+      "rua": "Capitao Nicolau Mota",
+      "numero": "629",
+      "bairro": "São Geraldo",
+      "cidade": "Passa Quatro",
+      "estado": "MG",
+      "cep": "37460-000",
+      "telefone": "(35) 3371-5050"
+    }
+  }
+]

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import data from "@/json/data.json";
 import fachada from "@/assets/local/fachada.jpg";
+import { data } from "@/json";
 
 const Local = () => {
   return (

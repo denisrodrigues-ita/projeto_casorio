@@ -1,13 +1,15 @@
 "use client";
 
 import React from "react";
-import links from "@/json/links.json";
 import Link from "next/link";
-import { ChevronUpIcon } from "@heroicons/react/24/outline";
-import { HomeIcon } from "@heroicons/react/24/outline";
-import { CheckBadgeIcon } from "@heroicons/react/24/outline";
-import { Bars3Icon } from "@heroicons/react/24/outline";
-import { XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3Icon,
+  XMarkIcon,
+  CheckBadgeIcon,
+  HomeIcon,
+  ChevronUpIcon,
+} from "@heroicons/react/24/outline";
+import { links } from "@/json";
 
 const Header = () => {
   const [isOpenDropDown, setIsOpenDropDown] = React.useState(false);

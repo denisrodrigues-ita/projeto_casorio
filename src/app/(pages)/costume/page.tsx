@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { suit1, suit2, suit3 } from "@/assets/suits";
-import data from "@/json/data.json";
+import { data } from "@/json";
 
 const Costume = () => {
   return (

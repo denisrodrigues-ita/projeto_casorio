@@ -15,3 +15,21 @@ export interface IModal extends IPix {
   showModal: boolean;
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
+export interface IHotelList {
+  hotelsList: IHotel[];
+}
+
+export interface IHotel {
+  nome: string;
+  img: string;
+  endereco: {
+    rua: string;
+    numero: string;
+    bairro: string;
+    cidade: string;
+    estado: string;
+    cep: string;
+    telefone: string;
+  };
+}
