@@ -17,10 +17,10 @@ const ConfirmPresence = () => {
         <fieldset className="border border-primary rounded-lg p-4 flex flex-col gap-4">
           <legend className="">Confirme sua presença</legend>
           <label>
-            Nome Completo:
+            Código de Confirmação:
             <input
               type="text"
-              placeholder="Nome completo"
+              placeholder="Código de Confirmação"
               className="p-2 rounded-lg block text-quinary font-semibold"
             />
           </label>
