@@ -1,4 +1,4 @@
-import {Header, Footer} from "@/components";
+import { Header, Footer } from "@/components";
 import type { Metadata } from "next";
 import { Alegreya } from "next/font/google";
 import "./globals.css";
