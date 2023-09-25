@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="pt-br" className={alegreya.className}>
       <body>
         <Header />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

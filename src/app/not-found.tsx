@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import notFoundSVG from "@/assets/svg/page-not-found.svg";
+import { notFound404 } from "@/assets/svg";
 
 const NotFound = () => {
   return (
@@ -10,7 +10,7 @@ const NotFound = () => {
       <Link className="font-medium hover:underline" href="/">
         Clique aqui para voltar ao inicio.
       </Link>
-      <Image src={notFoundSVG} alt="pagina não encontrada" />
+      <Image src={notFound404} alt="pagina não encontrada" />
     </div>
   );
 };

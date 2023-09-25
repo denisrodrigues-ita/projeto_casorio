@@ -1,0 +1,1 @@
+export { default as notFound404 } from './page-not-found.svg';
