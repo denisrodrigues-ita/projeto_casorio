@@ -1,1 +1,2 @@
-export { default as notFound404 } from './page-not-found.svg';
+export { default as PageNotFoundSVG } from "./page-not-found";
+export { default as DdevSVG } from "./ddev";
