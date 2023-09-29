@@ -6,6 +6,7 @@ const PageNotFoundSVG = (props: any) => {
       xmlns="http://www.w3.org/2000/svg"
       data-name="Layer 1"
       viewBox="0 0 860.131 571.148"
+      className="pageNotFoundSVG"
       {...props}
     >
       <path
@@ -91,6 +92,6 @@ const PageNotFoundSVG = (props: any) => {
       ></path>
     </svg>
   );
-}
+};
 
 export default PageNotFoundSVG;

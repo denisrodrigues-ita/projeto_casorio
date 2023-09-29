@@ -1,5 +1,15 @@
 const DdevSVG = (props: any) => (
-  <svg viewBox="0 0 370 116.628" {...props}>
+  <svg
+    viewBox="0 0 370 116.628"
+    style={{
+      margin: "0",
+      textAlign: "center",
+      width: "12rem",
+      height: "8rem",
+      fill: "#f7f3d5",
+    }}
+    {...props}
+  >
     <defs>
       <linearGradient id="ddev_svg__a">
         <stop offset={0} />

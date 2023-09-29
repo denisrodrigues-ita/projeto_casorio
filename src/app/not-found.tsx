@@ -10,7 +10,7 @@ const NotFound = () => {
       <Link className="font-medium hover:underline" href="/">
         Clique aqui para voltar ao inicio.
       </Link>
-      <PageNotFoundSVG style={{width: "25rem", height: "25rem"}} />
+      <PageNotFoundSVG />
     </div>
   );
 };
