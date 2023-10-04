@@ -111,7 +111,7 @@
   }
 
   .hamburgerBtn {
-    @apply p-2 lg:hidden;
+    @apply p-2 mb-4 lg:hidden;
   }
 
   .hamburgerMenu {

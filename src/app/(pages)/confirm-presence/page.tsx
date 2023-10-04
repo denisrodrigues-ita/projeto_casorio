@@ -1,9 +1,15 @@
 "use client";
 import React from "react";
+import { api } from "@/services";
 
 const ConfirmPresence = () => {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const [code, setCode] = React.useState("");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (code === "") return;
+    await api.put(code);
+    setCode("");
   };
 
   return (
@@ -21,6 +27,8 @@ const ConfirmPresence = () => {
             <input
               type="text"
               placeholder="Código de Confirmação"
+              value={code}
+              onChange={(e) => setCode(e.target.value)}
               className="p-2 rounded-lg block text-quinary font-semibold"
             />
           </label>
