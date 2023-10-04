@@ -23,15 +23,13 @@ export interface IHotelList {
 export interface IHotel {
   nome: string;
   img: string;
-  endereco: IEndereco[];
-}
-
-export interface IEndereco {
-  rua: string;
-  numero: string;
-  bairro: string;
-  cidade: string;
-  estado: string;
-  cep: string;
-  telefone: string;
+  endereco: {
+    rua: string;
+    numero: string;
+    bairro: string;
+    cidade: string;
+    estado: string;
+    cep: string;
+    telefone: string;
+  };
 }
