@@ -3,7 +3,7 @@
 import React from "react";
 import data from "@/json/data.json";
 import Cards from "@/components/Cards";
-import { ChevronUpIcon } from "@heroicons/react/24/outline";
+import {AiOutlineDown} from "react-icons/ai";
 import { pix } from "@/json";
 
 const Gifts = () => {
@@ -25,7 +25,7 @@ const Gifts = () => {
             type="button"
             className="bg-primary rounded-full flex justify-center items-center p-1 h-8 w-8"
           >
-            <ChevronUpIcon
+            <AiOutlineDown
               className={`${
                 isOpen
                   ? "duration-500 ease-in-out rotate-0"

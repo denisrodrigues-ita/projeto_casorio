@@ -3,12 +3,12 @@
 import React from "react";
 import Link from "next/link";
 import {
-  Bars3Icon,
-  XMarkIcon,
-  CheckBadgeIcon,
-  HomeIcon,
-  ChevronUpIcon,
-} from "@heroicons/react/24/outline";
+  AiOutlineMenu,
+  AiOutlineClose,
+  AiOutlineCheckCircle,
+  AiOutlineHome,
+  AiOutlineDown,
+} from "react-icons/ai";
 import { links } from "@/json";
 
 const Header = () => {
@@ -31,16 +31,16 @@ const Header = () => {
         className="hamburgerBtn hamburgerMenu"
       >
         {isOpenHamburgerMenu ? (
-          <XMarkIcon className="svgMenu" />
+          <AiOutlineClose className="svgMenu" />
         ) : (
-          <Bars3Icon className="svgMenu" />
+          <AiOutlineMenu className="svgMenu" />
         )}
       </button>
       <nav className={`${isOpenHamburgerMenu ? "" : "hidden"} lg:flex`}>
         <ul className="menuUl">
           <li>
             <Link className="linkMenu" href="/">
-              Inicio <HomeIcon />
+              Inicio <AiOutlineHome />
             </Link>
           </li>
         </ul>
@@ -48,14 +48,14 @@ const Header = () => {
         <ul className="menuUl">
           <li>
             <Link className="linkMenu" href="/confirm-presence">
-              Confirmar Presença <CheckBadgeIcon />
+              Confirmar Presença <AiOutlineCheckCircle />
             </Link>
           </li>
         </ul>
 
         <button onClick={handleOpenDropDown} className="btn1 justify-start">
           Ver Mais{" "}
-          <ChevronUpIcon
+          <AiOutlineDown
             className={`${
               isOpenDropDown ? "rotate-0" : "rotate-180"
             } chevronSvg`}

@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { useClipboard } from "@/hooks";
 import { IModal } from "@/model/interface";
-import { DocumentDuplicateIcon, CheckIcon } from "@heroicons/react/24/outline";
+import {AiOutlineCopy, AiOutlineCheck} from "react-icons/ai";
 
 const Modal = ({
   showModal,
@@ -19,13 +19,13 @@ const Modal = ({
     if (isCopy) {
       return (
         <p>
-          Copiado <CheckIcon />
+          Copiado <AiOutlineCheck />
         </p>
       );
     } else {
       return (
         <p>
-          Pix copia e cola <DocumentDuplicateIcon />
+          Pix copia e cola <AiOutlineCopy />
         </p>
       );
     }
