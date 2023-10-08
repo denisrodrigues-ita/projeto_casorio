@@ -26,7 +26,10 @@ const Header = () => {
   return (
     <header>
       <button
-        onClick={handleOpenHamburgerMenu}
+        onClick={() => {
+          handleOpenHamburgerMenu();
+          setIsOpenDropDown(false);
+        }}
         type="button"
         className="hamburgerBtn hamburgerMenu"
       >
@@ -39,7 +42,14 @@ const Header = () => {
       <nav className={`${isOpenHamburgerMenu ? "" : "hidden"} lg:flex`}>
         <ul className="menuUl">
           <li>
-            <Link className="linkMenu" href="/">
+            <Link
+              onClick={() => {
+                setIsOpenDropDown(false);
+                setIsOpenHamburgerMenu(false);
+              }}
+              className="linkMenu"
+              href="/"
+            >
               Inicio <AiOutlineHome />
             </Link>
           </li>
@@ -47,7 +57,14 @@ const Header = () => {
 
         <ul className="menuUl">
           <li>
-            <Link className="linkMenu" href="/confirm-presence">
+            <Link
+              onClick={() => {
+                setIsOpenDropDown(false);
+                setIsOpenHamburgerMenu(false);
+              }}
+              className="linkMenu"
+              href="/confirm-presence"
+            >
               Confirmar Presença <AiOutlineCheckCircle />
             </Link>
           </li>
@@ -64,7 +81,14 @@ const Header = () => {
         <ul className={`${isOpenDropDown ? "block" : "hidden"} customUl`}>
           {links.map((link, index) => (
             <li key={index} className={`liMenu`}>
-              <Link className={`linkMenu`} href={link.link}>
+              <Link
+                onClick={() => {
+                  setIsOpenDropDown(false);
+                  setIsOpenHamburgerMenu(false);
+                }}
+                className={`linkMenu`}
+                href={link.link}
+              >
                 {link.page}
               </Link>
             </li>
