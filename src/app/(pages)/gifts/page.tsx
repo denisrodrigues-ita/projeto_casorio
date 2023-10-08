@@ -2,8 +2,8 @@
 
 import React from "react";
 import data from "@/json/data.json";
-import Cards from "@/components/Cards";
-import {AiOutlineDown} from "react-icons/ai";
+import { Cards } from "@/components";
+import { AiOutlineDown } from "react-icons/ai";
 import { pix } from "@/json";
 
 const Gifts = () => {
