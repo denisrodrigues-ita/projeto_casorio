@@ -3,12 +3,12 @@
 import React from "react";
 import Link from "next/link";
 import {
-  Bars3Icon,
-  XMarkIcon,
-  CheckBadgeIcon,
-  HomeIcon,
-  ChevronUpIcon,
-} from "@heroicons/react/24/outline";
+  AiOutlineMenu,
+  AiOutlineClose,
+  AiOutlineCheckCircle,
+  AiOutlineHome,
+  AiOutlineDown,
+} from "react-icons/ai";
 import { links } from "@/json";
 
 const Header = () => {
@@ -26,36 +26,53 @@ const Header = () => {
   return (
     <header>
       <button
-        onClick={handleOpenHamburgerMenu}
+        onClick={() => {
+          handleOpenHamburgerMenu();
+          setIsOpenDropDown(false);
+        }}
         type="button"
         className="hamburgerBtn hamburgerMenu"
       >
         {isOpenHamburgerMenu ? (
-          <XMarkIcon className="svgMenu" />
+          <AiOutlineClose className="svgMenu" />
         ) : (
-          <Bars3Icon className="svgMenu" />
+          <AiOutlineMenu className="svgMenu" />
         )}
       </button>
       <nav className={`${isOpenHamburgerMenu ? "" : "hidden"} lg:flex`}>
         <ul className="menuUl">
           <li>
-            <Link className="linkMenu" href="/">
-              Inicio <HomeIcon />
+            <Link
+              onClick={() => {
+                setIsOpenDropDown(false);
+                setIsOpenHamburgerMenu(false);
+              }}
+              className="linkMenu"
+              href="/"
+            >
+              Inicio <AiOutlineHome />
             </Link>
           </li>
         </ul>
 
         <ul className="menuUl">
           <li>
-            <Link className="linkMenu" href="/confirm-presence">
-              Confirmar Presença <CheckBadgeIcon />
+            <Link
+              onClick={() => {
+                setIsOpenDropDown(false);
+                setIsOpenHamburgerMenu(false);
+              }}
+              className="linkMenu"
+              href="/confirm-presence"
+            >
+              Confirmar Presença <AiOutlineCheckCircle />
             </Link>
           </li>
         </ul>
 
         <button onClick={handleOpenDropDown} className="btn1 justify-start">
           Ver Mais{" "}
-          <ChevronUpIcon
+          <AiOutlineDown
             className={`${
               isOpenDropDown ? "rotate-0" : "rotate-180"
             } chevronSvg`}
@@ -64,7 +81,14 @@ const Header = () => {
         <ul className={`${isOpenDropDown ? "block" : "hidden"} customUl`}>
           {links.map((link, index) => (
             <li key={index} className={`liMenu`}>
-              <Link className={`linkMenu`} href={link.link}>
+              <Link
+                onClick={() => {
+                  setIsOpenDropDown(false);
+                  setIsOpenHamburgerMenu(false);
+                }}
+                className={`linkMenu`}
+                href={link.link}
+              >
                 {link.page}
               </Link>
             </li>

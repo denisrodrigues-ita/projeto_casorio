@@ -33,3 +33,9 @@ export interface IHotel {
     telefone: string;
   };
 }
+
+export interface ToastProps {
+  message: string;
+  setIsToastOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  color: string;
+}
