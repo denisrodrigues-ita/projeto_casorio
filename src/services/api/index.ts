@@ -13,7 +13,7 @@ const api = {
       const result = await response.json();
       return { response, result };
     } catch (error) {
-      throw error;
+      return {};
     }
   },
 };

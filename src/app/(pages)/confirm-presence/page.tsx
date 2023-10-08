@@ -35,16 +35,22 @@ const ConfirmPresence = () => {
     return true;
   };
 
-  const handleResultValidation = (response: Response, result?: any) => {
-    if (response.ok) {
+  const handleResultValidation = (response?: Response, result?: any) => {
+    if (response?.ok) {
       setIsToastOpen(true);
       setMessage(`${result.name}, sua presença foi confirmada!`);
       setColor("green");
       return;
+    } else if (response === undefined) {
+      setIsToastOpen(true);
+      setMessage("Ocorreu um erro, tente novamente");
+      setColor("red");
+      return;
+    } else {
+      setIsToastOpen(true);
+      setMessage("Código inválido");
+      setColor("red");
     }
-    setIsToastOpen(true);
-    setMessage("Código inválido");
-    setColor("red");
   };
 
   return (
