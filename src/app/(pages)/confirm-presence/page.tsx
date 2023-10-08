@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
 import { api } from "@/services";
-import { Toast } from "@/components";
+import { Spinner, Toast } from "@/components";
 
 const ConfirmPresence = () => {
   const [isToastOpen, setIsToastOpen] = React.useState(false);
+  const [isLoading, setIsLoading] = React.useState(false);
   const [message, setMessage] = React.useState("");
   const [color, setColor] = React.useState("");
   const [code, setCode] = React.useState("");
@@ -20,7 +21,7 @@ const ConfirmPresence = () => {
     e.preventDefault();
     const isValidCode = handleCodeVerification(code);
     if (!isValidCode) return;
-    const { response, result } = await api.put(code);
+    const { response, result } = await api.put(code, setIsLoading);
     handleResultValidation(response, result);
     setCode("");
   };
@@ -81,8 +82,8 @@ const ConfirmPresence = () => {
                 className="p-2 rounded-lg block text-quinary font-semibold"
               />
             </label>
-            <button type="submit" className="btn1">
-              Confirmar
+            <button type="submit" className="btn1" disabled={isLoading}>
+              {isLoading ? <Spinner /> : "Confirmar"}
             </button>
           </fieldset>
         </form>

@@ -83,7 +83,7 @@
 
 @layer components {
   .btn1 {
-    @apply bg-quaternary flex flex-row items-center justify-center font-semibold;
+    @apply bg-quaternary flex flex-row items-center justify-center font-semibold disabled:opacity-50;
   }
 
   .btn2 {
