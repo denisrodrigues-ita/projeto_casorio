@@ -30,7 +30,7 @@ const ConfirmPresence = () => {
     if (code.length != 6) {
       setIsToastOpen(true);
       setMessage("O código deve conter 6 dígitos");
-      setColor("yellow");
+      setColor("bg-yellow-600");
       return false;
     }
     return true;
@@ -40,17 +40,17 @@ const ConfirmPresence = () => {
     if (response?.ok) {
       setIsToastOpen(true);
       setMessage(`${result.name}, sua presença foi confirmada!`);
-      setColor("green");
+      setColor("bg-green-600");
       return;
     } else if (response === undefined) {
       setIsToastOpen(true);
       setMessage("Ocorreu um erro, tente novamente");
-      setColor("red");
+      setColor("bg-red-600");
       return;
     } else {
       setIsToastOpen(true);
       setMessage("Código inválido");
-      setColor("red");
+      setColor("bg-red-600");
     }
   };
 
