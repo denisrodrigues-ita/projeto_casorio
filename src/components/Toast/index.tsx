@@ -5,7 +5,7 @@ import { ToastProps } from "@/model/interface";
 const Toast: React.FC<ToastProps> = ({ message, setIsToastOpen, color }) => {
   return (
     <div
-      className={`z-10 absolute flex text-white bg-${color}-600 p-2 justify-center items-center rounded-lg right-0 top-0`}
+      className={`z-10 absolute flex text-white ${color} p-2 justify-center items-center rounded-lg right-0 top-0`}
     >
       <div className="">{message}</div>
       <button
