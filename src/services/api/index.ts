@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3001/guests";
+const BASE_URL = "http://localhost:3001/guests/public";
 
 const api = {
   async put(
