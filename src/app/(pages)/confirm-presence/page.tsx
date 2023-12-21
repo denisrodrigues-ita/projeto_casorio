@@ -2,20 +2,12 @@
 import React from "react";
 import { api } from "@/services";
 import { Spinner, Toast } from "@/components";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ConfirmPresence = () => {
-  const [isToastOpen, setIsToastOpen] = React.useState(false);
   const [isLoading, setIsLoading] = React.useState(false);
-  const [message, setMessage] = React.useState("");
-  const [color, setColor] = React.useState("");
   const [code, setCode] = React.useState("");
-
-  React.useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsToastOpen(false);
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, [isToastOpen]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -28,9 +20,7 @@ const ConfirmPresence = () => {
 
   const handleCodeVerification = (code: string) => {
     if (code.length != 6) {
-      setIsToastOpen(true);
-      setMessage("O código deve conter 6 dígitos");
-      setColor("bg-yellow-600");
+      toast.warning("O código deve conter 6 dígitos");
       return false;
     }
     return true;
@@ -38,31 +28,18 @@ const ConfirmPresence = () => {
 
   const handleResultValidation = (response?: Response, result?: any) => {
     if (response?.ok) {
-      setIsToastOpen(true);
-      setMessage(`${result.name}, sua presença foi confirmada!`);
-      setColor("bg-green-600");
+      toast.success(`${result.name}, sua presença foi confirmada!`);
       return;
     } else if (response === undefined) {
-      setIsToastOpen(true);
-      setMessage("Ocorreu um erro, tente novamente");
-      setColor("bg-red-600");
+      toast.error("Ocorreu um erro, tente novamente");
       return;
     } else {
-      setIsToastOpen(true);
-      setMessage("Código inválido");
-      setColor("bg-red-600");
+      toast.error("Código inválido");
     }
   };
 
   return (
     <div className="relative">
-      {isToastOpen && (
-        <Toast
-          setIsToastOpen={setIsToastOpen}
-          message={message}
-          color={color}
-        />
-      )}
       <div className="flex flex-col justify-center items-center">
         <h1>Confirmar Presença</h1>
         <p className="text-center my-8">
@@ -88,6 +65,7 @@ const ConfirmPresence = () => {
           </fieldset>
         </form>
       </div>
+      <Toast />
     </div>
   );
 };
