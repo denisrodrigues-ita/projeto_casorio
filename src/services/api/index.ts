@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3001/guests/public";
+const BASE_URL = "https://wedding-back-end.onrender.com/guests/public";
 
 const api = {
   async put(
