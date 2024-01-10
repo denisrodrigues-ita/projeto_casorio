@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3001/guests/public";
+const url = `${process.env.BASE_URL}/guests/public`;
 
 const api = {
   async put(
@@ -7,7 +7,7 @@ const api = {
   ) {
     try {
       setIsLoading(true);
-      const response = await fetch(`${BASE_URL}/${code}`, {
+      const response = await fetch(`${url}/${code}`, {
         method: "PUT",
         body: JSON.stringify({ attendance_status: true }),
         headers: {
