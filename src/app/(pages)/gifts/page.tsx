@@ -14,7 +14,7 @@ const Gifts = () => {
   };
 
   return (
-    <main>
+    <main className="mb-4">
       <div className="mb-4">
         <div
           onClick={handleClick}
