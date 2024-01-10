@@ -1,4 +1,4 @@
-const url = `${process.env.BASE_URL}/guests/public`;
+const url = `${process.env.NEXT_PUBLIC_BASE_URL}/guests/public`;
 
 const api = {
   async put(
