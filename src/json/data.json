@@ -1,6 +1,6 @@
 {
-  "nome_noivo": "Denis",
-  "nome_noiva": "Letícia",
+  "nome_noivo": "Lucas",
+  "nome_noiva": "Mariana",
   "contagem_regressiva": "2024.08.24 00:00:00",
   "data_casamento": "24.08.2024",
   "data_e_horario": "24 de Agosto ás 17:00",
@@ -17,11 +17,11 @@
   },
   "traje": "Passeio Completo",
   "endereco": {
-    "local": "Quinta das Flores",
-    "rua": "R. Haroldo F da Lavra",
-    "cidade": "Itamonte",
-    "UF": "MG",
-    "CEP": "37466-000"
+    "local": "Miami",
+    "rua": "100 Collins Ave",
+    "cidade": "Miami Beach",
+    "UF": "FL",
+    "CEP": "33139"
   },
-  "maps" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12418.159852057193!2d-44.83550394827488!3d-22.280224193061546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9e0f44fd74b88d%3A0xa4761561a600d1e!2sQuintas%20das%20Flores!5e0!3m2!1spt-BR!2sbr!4v1694465965204!5m2!1spt-BR!2sbr"
+  "maps" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.39567874627!2d-80.31185928703835!3d25.782538872227818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2zTWlhbWksIEZsw7NyaWRhLCBFVUE!5e0!3m2!1spt-BR!2sbr!4v1705525932438!5m2!1spt-BR!2sbr"
 }
