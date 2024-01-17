@@ -1,28 +1,28 @@
 [
   {
-    "nome": "Ribeirão do Ouro",
+    "nome": "Hilton lake taupo",
     "img": "/assets/hotels/img1.jpg",
     "endereco": {
-      "rua": "BR 354",
-      "numero": "KM 759",
-      "bairro": "",
-      "cidade": "Itamonte",
-      "estado": "MG",
-      "cep": "37466-000",
-      "telefone": "(35) 3363-1082"
+      "rua": "Street 1",
+      "numero": "123",
+      "bairro": "Beach houses",
+      "cidade": "Miami",
+      "estado": "FL",
+      "cep": "12345-678",
+      "telefone": "+1 999 999 999"
     }
   },
   {
-    "nome": "Mira Serra",
+    "nome": "King's hotel",
     "img": "/assets/hotels/img2.jpg",
     "endereco": {
-      "rua": "Capitao Nicolau Mota",
+      "rua": "Street 2",
       "numero": "629",
-      "bairro": "São Geraldo",
-      "cidade": "Passa Quatro",
-      "estado": "MG",
-      "cep": "37460-000",
-      "telefone": "(35) 3371-5050"
+      "bairro": "Beach houses",
+      "cidade": "Miami",
+      "estado": "FL",
+      "cep": "12345-678",
+      "telefone": "+1 999 999 999"
     }
   }
 ]
