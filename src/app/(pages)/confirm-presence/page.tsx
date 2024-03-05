@@ -26,9 +26,13 @@ const ConfirmPresence = () => {
     return true;
   };
 
+  const firstLetterToUpperCase = (name: string) => {
+    return name.charAt(0).toUpperCase() + name.slice(1);
+  }
+
   const handleResultValidation = (response?: Response, result?: any) => {
     if (response?.ok) {
-      toast.success(`${result.name}, sua presença foi confirmada!`);
+      toast.success(`${firstLetterToUpperCase(result.name)}, sua presença foi confirmada!`);
       return;
     } else if (response === undefined) {
       toast.error("Ocorreu um erro, tente novamente");
