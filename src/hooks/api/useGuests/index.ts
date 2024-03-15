@@ -1,7 +1,8 @@
 import api from "@/services/api/axiosConfig";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { UseMutationOptions, useMutation } from "@tanstack/react-query";
+import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 import * as Yup from "yup";
 
 const useUpdateGuest = () => {
@@ -10,25 +11,38 @@ const useUpdateGuest = () => {
     reValidateMode: "onChange",
   });
 
-  const { mutate, isPending, isError, isSuccess, status, data } = useMutation<
-    unknown,
-    Error,
-    GuestUpdateProps,
-    unknown
-  >(endPoint as UseMutationOptions<unknown, Error, GuestUpdateProps, unknown>);
+  const { mutate, isPending, isError, error, isSuccess, status, data } =
+    useMutation<GuestData, Error, GuestUpdateProps, unknown>({
+      mutationFn: (data) => endPoint(data),
+      onSuccess: () => {
+        context.reset();
+      },
+    });
 
-  return { mutate, isPending, status, context, data, isError, isSuccess };
+  return {
+    mutate,
+    isPending,
+    status,
+    context,
+    data,
+    isError,
+    error,
+    isSuccess,
+  };
 };
 
-const endPoint = async (data: GuestUpdateProps): Promise<unknown> => {
+const endPoint = async (data: GuestUpdateProps): Promise<GuestData> => {
   try {
-    const response = await api.put(
-      `/guests/public/${data.code}`,
-      data.attendance
-    );
+    const response = await api.put(`/guests/public/${data.code}`, {
+      attendance_status: true,
+    });
     return response.data;
   } catch (error) {
-    throw new Error("Ocorreu um erro ao atualizar o hóspede");
+    if ((error as any)?.response) {
+      throw new Error((error as any)?.response.data.message);
+    } else {
+      throw new Error("Erro ao confirmar presença");
+    }
   }
 };
 
@@ -38,11 +52,20 @@ const schema = Yup.object({
     .max(6, "O código deve conter 6 caracteres")
     .required()
     .label("code"),
-  attendance: Yup.object({ attendance_status: Yup.boolean().required() })
-    .required()
-    .label("data"),
 });
 
-type GuestUpdateProps = Yup.InferType<typeof schema>;
+export type GuestUpdateProps = Yup.InferType<typeof schema>;
+
+interface GuestData {
+  active: boolean;
+  attendance_status: boolean;
+  code: string;
+  created_at: string;
+  engaged_id: number;
+  id: number;
+  message: string;
+  name: string;
+  updated_at: string;
+}
 
 export default useUpdateGuest;

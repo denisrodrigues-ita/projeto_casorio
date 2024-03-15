@@ -1,46 +1,49 @@
 "use client";
-import React from "react";
+import React, { FormEventHandler } from "react";
 import { api } from "@/services";
 import { Spinner, Toast } from "@/components";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useUpdateGuest } from "@/hooks";
+import { GuestUpdateProps } from "@/hooks/api/useGuests";
 
 const ConfirmPresence = () => {
-  const [isLoading, setIsLoading] = React.useState(false);
-  const [code, setCode] = React.useState("");
+  const {
+    mutate,
+    isPending,
+    status,
+    context,
+    data: guestData,
+    isError,
+    error,
+    isSuccess,
+  } = useUpdateGuest();
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const isValidCode = handleCodeVerification(code);
-    if (!isValidCode) return;
-    const { response, result } = await api.put(code, setIsLoading);
-    handleResultValidation(response, result);
-    setCode("");
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+  } = context;
+
+  const sendForm = async (data: GuestUpdateProps) => {
+    mutate(data);
   };
 
-  const handleCodeVerification = (code: string) => {
-    if (code.length != 6) {
-      toast.warning("O código deve conter 6 dígitos");
-      return false;
-    }
-    return true;
-  };
-
-  const firstLetterToUpperCase = (name: string) => {
-    return name.charAt(0).toUpperCase() + name.slice(1);
-  }
-
-  const handleResultValidation = (response?: Response, result?: any) => {
-    if (response?.ok) {
-      toast.success(`${firstLetterToUpperCase(result.name)}, sua presença foi confirmada!`);
+  React.useEffect(() => {
+    if (errors.code) {
+      toast.warning(errors.code.message);
       return;
-    } else if (response === undefined) {
-      toast.error("Ocorreu um erro, tente novamente");
-      return;
-    } else {
-      toast.error("Código inválido");
     }
-  };
+
+    if (isSuccess && guestData) {
+      toast.success(`${guestData.name}, sua presença foi confirmada!`);
+      return;
+    }
+
+    if (isError && error) {
+      toast.error(error.message);
+    }
+  }, [errors, isSuccess, guestData, isError, error]);
 
   return (
     <div className="relative">
@@ -50,7 +53,7 @@ const ConfirmPresence = () => {
           Pedimos a confirmação da presença para que possamos nos preparar da
           melhor forma para te receber.
         </p>
-        <form action="submit" onSubmit={handleSubmit}>
+        <form action="submit" onSubmit={handleSubmit(sendForm)}>
           <fieldset className="border border-primary rounded-lg p-4 flex flex-col gap-4">
             <legend className="">Confirme sua presença</legend>
             <label>
@@ -58,13 +61,12 @@ const ConfirmPresence = () => {
               <input
                 type="text"
                 placeholder="Código de Confirmação"
-                value={code}
-                onChange={(e) => setCode(e.target.value)}
                 className="p-2 rounded-lg block text-quinary font-semibold"
+                {...register("code")}
               />
             </label>
-            <button type="submit" className="btn1" disabled={isLoading}>
-              {isLoading ? <Spinner /> : "Confirmar"}
+            <button type="submit" className="btn1" disabled={isPending}>
+              {isPending ? <Spinner /> : "Confirmar"}
             </button>
           </fieldset>
         </form>
