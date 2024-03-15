@@ -2,6 +2,7 @@ import { Header, Footer } from "@/components";
 import type { Metadata } from "next";
 import { Alegreya } from "next/font/google";
 import "./globals.css";
+import Providers from "@/utils/Providers";
 
 const alegreya = Alegreya({
   weight: ["400", "700"],
@@ -23,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className={alegreya.className}>
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <Providers>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
