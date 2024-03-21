@@ -19,7 +19,7 @@ const Card = ({ gift }: { gift: IPix }) => {
       <div className="flex flex-col mt-2">
         <p>{gift.description}</p>
         <h2 className="flex">
-          <span className="text-sm leading-8">R$</span>
+          {!isNaN(parseFloat(gift.value)) && <span className="text-sm leading-8">R$</span>}
           {gift.value}
         </h2>
         <button

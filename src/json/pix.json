@@ -3,56 +3,64 @@
     "value": "50",
     "image": "/assets/gifts/gift1.svg",
     "description": "Para os tijolos de nossa casa nova",
-    "qr_code_img": "/assets/qrCode/qrCode100.png",
-    "pix_key": "123456",
-    "code_qr_code": "2"
+    "qr_code_img": "/assets/qrCode/qrCode50.png",
+    "pix_key": "0b39fd8a-2b6a-491d-a8bb-e2d5f288201f",
+    "code_qr_code": "00020126580014br.gov.bcb.pix01360b39fd8a-2b6a-491d-a8bb-e2d5f288201f520400005303986540550.005802BR5925DENIS RODRIGUES DOS SANTO6008ITAMONTE62580520SAN2024032115300969750300017br.gov.bcb.brcode01051.0.06304B6BE"
   },
   {
     "value": "100",
     "image": "/assets/gifts/gift2.svg",
     "description": "Para os moveis da casa nova",
     "qr_code_img": "/assets/qrCode/qrCode100.png",
-    "pix_key": "123456",
-    "code_qr_code": "3"
+    "pix_key": "0b39fd8a-2b6a-491d-a8bb-e2d5f288201f",
+    "code_qr_code": "00020126580014br.gov.bcb.pix01360b39fd8a-2b6a-491d-a8bb-e2d5f288201f5204000053039865406100.005802BR5925DENIS RODRIGUES DOS SANTO6008ITAMONTE62580520SAN2024032121062955050300017br.gov.bcb.brcode01051.0.06304BE76"
   },
   {
     "value": "150",
     "image": "/assets/gifts/gift3.svg",
     "description": "Para a maquiagem da noiva",
-    "qr_code_img": "/assets/qrCode/qrCode100.png",
-    "pix_key": "123456",
-    "code_qr_code": "4"
+    "qr_code_img": "/assets/qrCode/qrCode150.png",
+    "pix_key": "0b39fd8a-2b6a-491d-a8bb-e2d5f288201f",
+    "code_qr_code": "00020126580014br.gov.bcb.pix01360b39fd8a-2b6a-491d-a8bb-e2d5f288201f5204000053039865406150.005802BR5925DENIS RODRIGUES DOS SANTO6008ITAMONTE62580520SAN2024032121590754950300017br.gov.bcb.brcode01051.0.06304FAE4"
   },
   {
     "value": "200",
     "image": "/assets/gifts/gift4.svg",
     "description": "Para a lava louças para o casal não brigar",
-    "qr_code_img": "/assets/qrCode/qrCode100.png",
-    "pix_key": "123456",
-    "code_qr_code": "5"
+    "qr_code_img": "/assets/qrCode/qrCode200.png",
+    "pix_key": "0b39fd8a-2b6a-491d-a8bb-e2d5f288201f",
+    "code_qr_code": "00020126580014br.gov.bcb.pix01360b39fd8a-2b6a-491d-a8bb-e2d5f288201f5204000053039865406200.005802BR5925DENIS RODRIGUES DOS SANTO6008ITAMONTE62580520SAN2024032122025994850300017br.gov.bcb.brcode01051.0.06304A41D"
   },
   {
     "value": "250",
     "image": "/assets/gifts/gift5.svg",
     "description": "Para o restaurante da lua de mel",
-    "qr_code_img": "/assets/qrCode/qrCode100.png",
-    "pix_key": "123456",
-    "code_qr_code": "6"
+    "qr_code_img": "/assets/qrCode/qrCode250.png",
+    "pix_key": "0b39fd8a-2b6a-491d-a8bb-e2d5f288201f",
+    "code_qr_code": "00020126580014br.gov.bcb.pix01360b39fd8a-2b6a-491d-a8bb-e2d5f288201f5204000053039865406250.005802BR5925DENIS RODRIGUES DOS SANTO6008ITAMONTE62580520SAN2024032122034616150300017br.gov.bcb.brcode01051.0.06304060D"
   },
   {
     "value": "500",
     "image": "/assets/gifts/gift6.svg",
     "description": "Para os bebes",
-    "qr_code_img": "/assets/qrCode/qrCode100.png",
-    "pix_key": "123456",
-    "code_qr_code": "7"
+    "qr_code_img": "/assets/qrCode/qrCode500.png",
+    "pix_key": "0b39fd8a-2b6a-491d-a8bb-e2d5f288201f",
+    "code_qr_code": "00020126580014br.gov.bcb.pix01360b39fd8a-2b6a-491d-a8bb-e2d5f288201f5204000053039865406500.005802BR5925DENIS RODRIGUES DOS SANTO6008ITAMONTE62580520SAN2024032122043186050300017br.gov.bcb.brcode01051.0.063045249"
   },
   {
     "value": "1000",
     "image": "/assets/gifts/gift7.svg",
     "description": "Para a viajem de lua de mel",
-    "qr_code_img": "/assets/qrCode/qrCode100.png",
-    "pix_key": "123456",
-    "code_qr_code": "8"
+    "qr_code_img": "/assets/qrCode/qrCode1000.png",
+    "pix_key": "0b39fd8a-2b6a-491d-a8bb-e2d5f288201f",
+    "code_qr_code": "00020126580014br.gov.bcb.pix01360b39fd8a-2b6a-491d-a8bb-e2d5f288201f52040000530398654071000.005802BR5925DENIS RODRIGUES DOS SANTO6008ITAMONTE62580520SAN2024032122051104550300017br.gov.bcb.brcode01051.0.063045C84"
+  },
+  {
+    "value": "Qualquer valor",
+    "image": "/assets/gifts/gift8.svg",
+    "description": "Para a lua de mel",
+    "qr_code_img": "/assets/qrCode/qrCode.png",
+    "pix_key": "0b39fd8a-2b6a-491d-a8bb-e2d5f288201f",
+    "code_qr_code": "00020126580014br.gov.bcb.pix01360b39fd8a-2b6a-491d-a8bb-e2d5f288201f5204000053039865802BR5925DENIS RODRIGUES DOS SANTO6008ITAMONTE62580520SAN2024032122131733150300017br.gov.bcb.brcode01051.0.0630406A5"
   }
 ]
