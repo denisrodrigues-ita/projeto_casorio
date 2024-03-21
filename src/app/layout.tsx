@@ -12,8 +12,8 @@ const alegreya = Alegreya({
 });
 
 export const metadata: Metadata = {
-  title: "Casório 💚",
-  description: "Nosso casamento",
+  title: "Denis e Letícia 💚",
+  description: "Casamento de Denis e Letícia",
 };
 
 export default function RootLayout({
