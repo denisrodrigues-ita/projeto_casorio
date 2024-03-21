@@ -23,6 +23,7 @@ export interface IHotelList {
 export interface IHotel {
   nome: string;
   img: string;
+  page: string;
   endereco: {
     rua: string;
     numero: string;

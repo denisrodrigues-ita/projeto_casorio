@@ -4,6 +4,17 @@ import Link from "next/link";
 import { IHotel } from "@/model/interface";
 
 const HotelsCards = ({ hotel }: { hotel: IHotel }) => {
+  const formatUrl = (url: string) => {
+    const urlObj = new URL(url);
+    let formattedUrl = urlObj.hostname + urlObj.pathname;
+
+    if (formattedUrl.endsWith("/")) {
+      formattedUrl = formattedUrl.slice(0, -1);
+    }
+
+    return formattedUrl;
+  };
+
   return (
     <div className="flex flex-col text-center items-center md:flex-row md:text-start gap-4 mb-4 bg-quaternary rounded-lg">
       <Image
@@ -22,6 +33,7 @@ const HotelsCards = ({ hotel }: { hotel: IHotel }) => {
           hotel.endereco.cidade
         }${hotel.endereco.cidade && ","} ${hotel.endereco.estado}`}</p>
         {hotel.endereco.cep && <p>CEP: {hotel.endereco.cep}</p>}
+        <Link href={hotel.page}>{formatUrl(hotel.page)}</Link>
         {hotel.endereco.telefone && (
           <p>
             Tel:{" "}

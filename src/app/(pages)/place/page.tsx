@@ -5,8 +5,8 @@ import { data } from "@/json";
 const Local = () => {
   return (
     <div>
-      <div className="flex flex-col sm:flex-row justify-center items-center text-center sm:text-left sm:justify-start gap-4">
-        <Image src={fachada} alt="fachada" className="rounded-lg sm:w-64" />
+      <div className="flex flex-col-reverse sm:flex-row justify-center items-center text-center sm:text-left sm:justify-start gap-4">
+        <Image src={fachada} alt="fachada" className="rounded-lg sm:w-1/2" />
         <div className="mt-4 sm:my-0">
           <h1>{data.endereco.local}</h1>
           <p>{data.endereco.rua}</p>

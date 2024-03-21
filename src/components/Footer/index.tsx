@@ -10,7 +10,7 @@ import Link from "next/link";
 const Footer: React.FC = () => {
   const date = new Date();
   return (
-    <footer className="border-t border-primary">
+    <footer className="border-t border-primary mt-12">
       <DdevSVG />
       <div className="text-center sm:text-start">
         <Link href="https://wa.me/5535984484087" target="_blank">

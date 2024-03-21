@@ -1,28 +1,44 @@
 [
   {
-    "nome": "Hilton lake taupo",
+    "nome": "Pousada do verde",
     "img": "/assets/hotels/img1.jpg",
+    "page": "https://www.pousadadoverde.com.br",
     "endereco": {
-      "rua": "Street 1",
-      "numero": "123",
-      "bairro": "Beach houses",
-      "cidade": "Miami",
-      "estado": "FL",
-      "cep": "12345-678",
-      "telefone": "+1 999 999 999"
+      "rua": "Estrada da Selinha",
+      "numero": "1400",
+      "bairro": "Tronqueiras",
+      "cidade": "Passa Quatro",
+      "estado": "MG",
+      "cep": "37460-000",
+      "telefone": "(35) 3371-3000"
     }
   },
   {
-    "nome": "King's hotel",
+    "nome": "Mira serra parque hotel",
     "img": "/assets/hotels/img2.jpg",
+    "page": "https://www.hotelmiraserra.com.br",
     "endereco": {
-      "rua": "Street 2",
+      "rua": "Rua Capitão Nicolau Mota",
       "numero": "629",
-      "bairro": "Beach houses",
-      "cidade": "Miami",
-      "estado": "FL",
-      "cep": "12345-678",
-      "telefone": "+1 999 999 999"
+      "bairro": "São Geraldo",
+      "cidade": "Passa Quatro",
+      "estado": "MG",
+      "cep": "37460-000",
+      "telefone": "(35) 3371-5050"
+    }
+  },
+  {
+    "nome": "Hotel recanto das hortênsias",
+    "img": "/assets/hotels/img3.jpg",
+    "page": "https://hotelrecantodashortensias.com.br/home",
+    "endereco": {
+      "rua": "Av. Cel. Arthur Tibúrcio",
+      "numero": "10",
+      "bairro": "Centro",
+      "cidade": "Passa Quatro",
+      "estado": "MG",
+      "cep": "37460-000",
+      "telefone": "(35) 3371-4929"
     }
   }
 ]

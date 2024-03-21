@@ -1,9 +1,9 @@
 {
-  "nome_noivo": "Lucas",
-  "nome_noiva": "Mariana",
-  "contagem_regressiva": "2024.08.24 00:00:00",
-  "data_casamento": "24.08.2024",
-  "data_e_horario": "24 de Agosto ás 17:00",
+  "nome_noivo": "Denis",
+  "nome_noiva": "Letícia",
+  "contagem_regressiva": "2024.11.16 16:00:00",
+  "data_casamento": "16.11.2024",
+  "data_e_horario": "16 de Novembro ás 16:00",
   "texto_geral": {
     "texto": "Queridos amigos e familiares, à medida que nosso grande dia se aproxima, estamos preenchidos com gratidão e alegria por compartilhar este momento especial com todos vocês. Nosso casamento não é apenas a união de duas almas, mas também o começo de uma jornada emocionante e significativa. Compartilhamos sonhos de construir um lar repleto de amor e memórias, assim como de explorar o mundo juntos em uma lua de mel inesquecível. Ao invés de presentes tradicionais, gostaríamos de convidá-los a fazer parte desses momentos marcantes. Suas contribuições, independentemente do tamanho, serão uma parte valiosa das fundações que estamos estabelecendo e das memórias que estamos criando. Desde o alicerce de nossa casa até as experiências em nossa lua de mel, cada contribuição carrega um significado profundo e nos aproxima ainda mais de vocês. Agradecemos de coração por todo o amor e apoio que nos deram ao longo de nossa jornada. Suas contribuições não são apenas presentes materiais, mas expressões do carinho que compartilhamos. Mal podemos esperar para celebrar este momento com todos vocês e criar memórias que durarão uma vida inteira. Obrigado por fazerem parte da nossa história. Com amor e gratidão"
   },
@@ -17,11 +17,11 @@
   },
   "traje": "Passeio Completo",
   "endereco": {
-    "local": "Miami",
-    "rua": "100 Collins Ave",
-    "cidade": "Miami Beach",
-    "UF": "FL",
-    "CEP": "33139"
+    "local": "Pousada do verde",
+    "rua": "Tronqueiras",
+    "cidade": "Passa Quatro",
+    "UF": "MG",
+    "CEP": "37460-000"
   },
-  "maps" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.39567874627!2d-80.31185928703835!3d25.782538872227818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2zTWlhbWksIEZsw7NyaWRhLCBFVUE!5e0!3m2!1spt-BR!2sbr!4v1705525932438!5m2!1spt-BR!2sbr"
+  "maps" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.1775431222004!2d-44.956585106825!3d-22.346924087314974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9e0103e57bc197%3A0xe40d4d9c01efe70d!2sPousada%20do%20Verde!5e0!3m2!1spt-BR!2sbr!4v1710885524352!5m2!1spt-BR!2sbr"
 }
