@@ -54,13 +54,5 @@
     "qr_code_img": "/assets/qrCode/qrCode1000.png",
     "pix_key": "0b39fd8a-2b6a-491d-a8bb-e2d5f288201f",
     "code_qr_code": "00020126580014br.gov.bcb.pix01360b39fd8a-2b6a-491d-a8bb-e2d5f288201f52040000530398654071000.005802BR5925DENIS RODRIGUES DOS SANTO6008ITAMONTE62580520SAN2024032122051104550300017br.gov.bcb.brcode01051.0.063045C84"
-  },
-  {
-    "value": "Qualquer valor",
-    "image": "/assets/gifts/gift8.svg",
-    "description": "Para a lua de mel",
-    "qr_code_img": "/assets/qrCode/qrCode.png",
-    "pix_key": "0b39fd8a-2b6a-491d-a8bb-e2d5f288201f",
-    "code_qr_code": "00020126580014br.gov.bcb.pix01360b39fd8a-2b6a-491d-a8bb-e2d5f288201f5204000053039865802BR5925DENIS RODRIGUES DOS SANTO6008ITAMONTE62580520SAN2024032122131733150300017br.gov.bcb.brcode01051.0.0630406A5"
   }
 ]
