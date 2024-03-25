@@ -1,6 +1,5 @@
 "use client";
-import React, { FormEventHandler } from "react";
-import { api } from "@/services";
+import React from "react";
 import { Spinner, Toast } from "@/components";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
