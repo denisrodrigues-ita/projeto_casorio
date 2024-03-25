@@ -1,8 +1,9 @@
-import api from "@/services/api/axiosConfig";
+"use client";
+
+import { api } from "@/services";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
-import { toast } from "react-toastify";
 import * as Yup from "yup";
 
 const useUpdateGuest = () => {
